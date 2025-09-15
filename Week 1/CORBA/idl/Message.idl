@@ -1,0 +1,27 @@
+module MessageApp {
+    interface Message {
+        string send(in string msg);
+    };
+
+    interface Dog {
+        void setDog(in string name, in string kind, in string hairColor, in long age);
+
+        // Thuộc tính (getter/setter)
+        string getName();
+        void setName(in string name);
+
+        string getKind();
+        void setKind(in string kind);
+
+        string getHairColor();
+        void setHairColor(in string color);
+
+        long getAge();
+        void setAge(in long age);
+
+        // Hành vi
+        string bark();
+        string walk();
+        string playCatch(in string item);
+    };
+};
